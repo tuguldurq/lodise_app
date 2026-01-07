@@ -1,43 +1,20 @@
 import 'package:flutter/material.dart';
 
+import './routing/router.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MainApp()
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget{
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
-      ),
-      home: const HomePage(title: 'Flutter Demo Home'),
-    );
-  }
-}
-
-
-class HomePage extends StatelessWidget{
-  final String title;
-  const HomePage({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: Text(title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          ],
-        ),
-      ),
+    return MaterialApp.router(
+      routerConfig: router()
     );
   }
 }

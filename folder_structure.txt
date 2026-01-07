@@ -1,0 +1,20 @@
+ui - ui layer
+    core/ - core ui
+        ui - custom widget
+        theme - theme
+    feature/
+        viewModel/  - auth view viewModel
+        widgets/    - auth widgets,screens
+data/
+    repository/
+        feature - abstract, local, remote repo
+    service/
+        api_client.dart
+        auth_api_client.dart
+    model
+        feature_api_model.dart 
+routing/
+    router/
+    routes/
+
+
