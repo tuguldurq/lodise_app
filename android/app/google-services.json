@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69765080132",
+    "project_id": "lodise-89a76",
+    "storage_bucket": "lodise-89a76.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69765080132:android:f405af61ec53bd37f30811",
+        "android_client_info": {
+          "package_name": "com.example.lodise_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy7u-TAcHU1UUy9LEcxo7MuYOgL9Y5E1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

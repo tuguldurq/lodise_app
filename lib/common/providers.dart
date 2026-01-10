@@ -6,6 +6,8 @@ import '../data/repository/auth/auth_repository_impl.dart';
 
 List<SingleChildWidget> get providers {
   return [
-    Provider(create: (context) => AuthRepositoryImpl() as AuthRepository)
+    ChangeNotifierProvider(
+      create: (context) => AuthRepositoryImpl() as AuthRepository
+    )
   ];
 }
