@@ -1,8 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:lodise_app/data/services/api.dart';
 import 'package:lodise_app/data/services/models/event.dart';
-import 'package:lodise_app/firebase_options.dart';
 import 'package:lodise_app/utils/result.dart';
 import 'package:test/test.dart';
 
@@ -12,7 +10,6 @@ void main() {
     late FirebaseFirestore database;
     late ApiClient api;
     setUp(() {
-      Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
       database = FirebaseFirestore.instance;
       api = ApiClient(db: database);
     });
