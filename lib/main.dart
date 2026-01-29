@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import './ui/core/theme.dart';
 import './common/providers.dart';
 import './routing/router.dart';
 
@@ -17,6 +18,7 @@ class MainApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: theme,
       routerConfig: router()
     );
   }
