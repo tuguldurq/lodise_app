@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../view_model/home_view_model.dart';
+import './event_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.viewModel});
@@ -32,34 +33,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: 1,
         itemBuilder: (context, i) {
-          return Container(
-            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.black),
-              borderRadius: BorderRadius.all(Radius.circular(13)),
-            ),
-            child: Column(
-              children: [
-                Container(
-                  height: 120,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/event_1.jpg"),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Row(
-                  children: [
-                    Icon(Icons.map_outlined),
-                    Text("4517, avenue Washington. Manchester"),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.join_full)),
-                  ],
-                ),
-              ],
-            ),
-          );
+          return EventWidget();
         },
       ),
     );
