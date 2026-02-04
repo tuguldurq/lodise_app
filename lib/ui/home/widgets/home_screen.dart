@@ -36,6 +36,27 @@ class HomeScreen extends StatelessWidget {
           return EventWidget();
         },
       ),
+      bottomNavigationBar: Container(
+        margin: EdgeInsets.only(bottom: 30),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(),
+          borderRadius: BorderRadius.circular(50.0),
+        ),
+        child: NavigationBar(
+          backgroundColor: Colors.transparent,
+          destinations: [
+            NavigationDestination(
+              icon: Icon(Icons.home_outlined),
+              label: 'home',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.account_circle),
+              label: 'account',
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
